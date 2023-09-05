@@ -15,45 +15,48 @@
 
     <div class="formulaire">
 
-        <form method="get">
+        <form action="./recap.html" method="get">
             <h1>Avis de passage</h1>
 
             <p>Champs obligatoires*</p>
 
             <label for="nom">Nom du client*</label>
             <br>
-            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
             <br>
             <label for="date">Date d'intervention du technicien : </label>
             <br>
-            <input type="datetime-local">
+            <input type="datetime-local" id="date" name="date" required>
             <br>
-            <label for="options"> Type d'intervention:</label>
+            <label for="vitrerie"> Type d'intervention:</label>
             <br>
             <label for="vitrerie">
-                <input type="checkbox" name="vitrerie" value="vitrerie">Vitrerie
+                <input type="checkbox" id="vitrerie" name="vitrerie" value="vitrerie">Vitrerie
             </label>
             <label for="aspirateur">
-                <input type="checkbox" name="aspirateur" value="aspirateur">Aspirateur
+                <input type="checkbox" id="aspirateur" name="aspirateur" value="aspirateur">Aspirateur
             </label>
             <label for="entretien">
-                <input type="checkbox" name="Entretien" value="boat">Entretien général
+                <input type="checkbox" id="entretien" name="Entretien" value="boat">Entretien général
             </label><br>
             <label for="observation"> Observations :</label>
             <br>
-            <textarea class="textarea" placeholder="Ajouter un commentaire"></textarea>
+            <textarea id="observation" name="observation" class="textarea" placeholder="Ajouter un commentaire"></textarea>
             <br>
             <label for="signature-tech">Signature du technicien *</label>
             <br>
-            <input type="text" name="signature-tech" placeholder="Signer" required>
+            <input type="text" id="signature-tech" name="signature-tech" placeholder="Signer" required>
             <br>
             <label for="signature-client">Signature du client *</label>
             <br>
-            <input type="text" name="signature-client" placeholder="Signer" required>
+            <input type="text" id="signature-client" name="signature-client" placeholder="Signer" required>
             <br>
             <p>Merci de votre confiance</p>
-            <button type="submit" name="submit" class="submit">Valider!
-            </button>
+          
+                <button type="submit" name="submit" class="submit">Valider !</button>
+       
+            
+            
 
         </form>
     </div>
