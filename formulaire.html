@@ -11,18 +11,78 @@
         <img src="images/v5_2.png" alt="">
     </div>
 
-    <div class="form-container">
-        <div class="title">
-            <h1>Avis de passage</h1>
-        </div>
-        <p>Avis de passage de nôtre technicien</p>
-        <p>Nom du client :</p>
-        <p>Date d’intervention :</p>
-        <p>Observations:</p>
-        <p>Signature client :</p>
-        <p>Signature technicien:</p>
-    </div>
+    <div class="formulaire">   
     
+        <form method="get">
+            <h1>Avis de passage</h1>
+        
+        <p>Champs obligatoires*</p>
+        
+        <label for="nom" >Votre nom*</label>
+        <br>
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <br>
+        <label for="Prénom">Votre prénom*</label>
+        <br>
+        <input type="text" name="prénom" placeholder="Votre prénom" required>
+        <br>
+        <label for="tel">Votre téléphone*</label>
+        <br>
+        <input type="tel" name="téléphone" placeholder="Téléphone" required>
+        <br>
+        <label for="email">Votre email*</label>
+        <br>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <br>
+        <label for="ville">Sélectionnez la ville:</label>
+        <br>
+            <select name="ville" id="ville-select" class='ville' onfocus='this.size=10;' onblur='this.size=0;' onchange='this.size=1; this.blur();'>
+            <option value="Paris">Paris</option>
+            <option value="Lille">Lille</option>
+            <option value="Montcuq">Montcuq</option>
+            <option value="Jouy en Josas">Jouy en Josas</option>
+            <option value="Villeneuve d'Ascq">Villeneuve d'Ascq</option>
+            <option value="Lomme">Lomme</option>
+            <option value="Bourg la Reine">Bourg la Reine</option>
+        </select>
+         
+        <br>
+        <label for="Date">Date d'arrivée</label>
+        <br>
+        <input type="datetime-local">
+        <br>
+        <label for="nombre"> Nombre de personnes</label>
+        <br>
+        <input type="number" id="nombre" name="nombre de personnes" min="1" max="10">
+        <br>
+        <label for="options"> Vos options</label>
+        <br>
+        <label for="climatisation">
+            <input type="checkbox" name="climatisation" value="bike">Climatisation
+            </label>
+            <label for="Mini Bar">
+            <input type="checkbox" name="minibar" value="car">Mini Bar
+            </label>
+            <label for="Jacuzzi">
+            <input type="checkbox" name="Jacuzzi" value="boat">Jacuzzi
+            </label><br>
+        <textarea placeholder="Ajouter un commentaire"></textarea>
+        <br>
+        <label for="cgv"> Acceptation des conditions générales de vente CGV*</label>
+        <br>
+        <label for="J'accepte">
+            <input type="radio" name="fav_language" value="J'accepte" required>J'accepte
+            </label>
+            <label for="Je refuse">
+            <input type="radio" name="fav_language" value="Je refuse" required>Je refuse
+            
+        <br>
+        <button type="submit" name="submit" class="submit">Valider!
+        </button>
+        
+        </form>
+        </div>
+        
 
     <script src="script.js"></script>
 </body>
