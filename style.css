@@ -113,6 +113,7 @@ option:hover {
   border: 2px solid;
   padding: 2rem;
   background-color: green;
+  border-radius: 10px;
   cursor: pointer;
   margin-top: 3rem;
 }
@@ -142,13 +143,27 @@ footer {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 14px;
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* devient vertical */
+    padding: 15px;
   }
-}
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 14px;
+  header img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  header a.btn-back {
+    font-size: 1.2rem;
+    padding: 12px 15px;
+  }
+  .main-container .child-container,
+  .recap-container {
+    width: 90%;
+    padding: 20px;
+  }
+  .btn-back,
+  .btn-avis-passage a {
+    font-size: 1.2rem;
+    padding: 10px 15px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -47,7 +47,7 @@ p {
 }
 
 .formulaire {
-    background-color: rgba(25, 26, 27, 0.8); // 0.9 = l'opacité
+    background-color: rgba(25, 26, 27, 0.8); 
     padding: 5%;
     margin: 20%;
     margin-top: 50px;
@@ -91,6 +91,7 @@ option:hover {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+  
 }
 
 .recap-container {
@@ -133,6 +134,7 @@ option:hover {
     border: 2px solid;
     padding: 2rem;
     background-color: green;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 3rem;
 
@@ -164,15 +166,34 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
+
+
+@media only screen and (max-width: 768px) {
+    
+    header {
+        flex-direction: column; /* devient vertical */
+        padding: 15px;
     }
 
-}
+    header img {
+        width: 200px; 
+        margin-bottom: 10px; 
+    }
 
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
+    header a.btn-back {
+        font-size: 1.2rem; 
+        padding: 12px 15px; 
+    }
+
+    .main-container .child-container,
+    .recap-container {
+        width: 90%;  
+        padding: 20px; 
+    }
+
+    .btn-back,
+    .btn-avis-passage a {
+        font-size: 1.2rem; 
+        padding: 10px 15px; 
     }
 }
