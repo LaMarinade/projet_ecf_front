@@ -9,9 +9,12 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="images/v5_2.png" alt="">
-    </div>
+    <header>
+        <a href="home.html">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <a href="formulaire.html" class="avis-link">Remplir un avis de passage</a>
+    </header>
 
     <div class="formulaire">
 
@@ -19,29 +22,26 @@
             <h1>Avis de passage</h1>
 
             <p>Champs obligatoires*</p>
-
-            <label for="nom">Nom du client*</label>
+            ...
+            <label for="client-select">Sélectionnez le client : </label>
             <br>
-            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            <select name="client" id="client-select" class='client' onfocus='this.size=10;' onblur='this.size=0;'
+                onchange='this.size=1; this.blur();'>
+                <option value="jardins-ariana">Jardins d'Ariana</option>
+                <option value="jerome-livran">Jérôme Livran</option>
+                <option value="philippe-parguey">Philippe Parguey</option>
+                <option value="archimed">Archimed</option>
+                <option value="becom">BeCom</option>
+            </select>
             <br>
             <label for="date">Date d'intervention du technicien : </label>
             <br>
             <input type="datetime-local" id="date" name="date" required>
             <br>
-            <label for="vitrerie"> Type d'intervention:</label>
-            <br>
-            <label for="vitrerie">
-                <input type="checkbox" id="vitrerie" name="vitrerie" value="vitrerie">Vitrerie
-            </label>
-            <label for="aspirateur">
-                <input type="checkbox" id="aspirateur" name="aspirateur" value="aspirateur">Aspirateur
-            </label>
-            <label for="entretien">
-                <input type="checkbox" id="entretien" name="Entretien" value="boat">Entretien général
-            </label><br>
             <label for="observation"> Observations :</label>
             <br>
-            <textarea id="observation" name="observation" class="textarea" placeholder="Ajouter un commentaire"></textarea>
+            <textarea id="observation" name="observation" class="textarea"
+                placeholder="Ajouter une observation"></textarea>
             <br>
             <label for="signature-tech">Signature du technicien *</label>
             <br>
@@ -51,12 +51,12 @@
             <br>
             <input type="text" id="signature-client" name="signature-client" placeholder="Signer" required>
             <br>
-            <p>Merci de votre confiance</p>
-          
-                <button type="submit" name="submit" class="submit">Valider !</button>
-       
-            
-            
+            <br>
+
+            <button type="submit" name="submit" class="submit">Valider !</button>
+
+
+
 
         </form>
     </div>
