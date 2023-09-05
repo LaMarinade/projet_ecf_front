@@ -19,9 +19,8 @@ body {
 
 h1 {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    font-family: 'Thrillington';
   }
   
   p {
@@ -30,8 +29,7 @@ h1 {
   }
   
   .formulaire {
-    background-color: #191a1b;
-    opacity: 1;
+    background-color: rgba(25, 26, 27, 0.8); // 0.9 est l'opacité
     padding: 5%;
     margin: 20%;
     margin-top: 50px;
